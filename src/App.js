@@ -10,7 +10,7 @@ import '@trendmicro/react-sidenav/dist/react-sidenav.css';
 function App() {
   return (
     <div className="App">
-      <SideNav
+    <SideNav
           onSelect={(selected) => {
               // Add your code here
           }}
@@ -23,6 +23,22 @@ function App() {
             </NavIcon>
             <NavText>
                 Home
+            </NavText>
+        </NavItem>
+        <NavItem eventKey="beneficios">
+            <NavIcon>
+                <i className="fa fa-fw fa-home" style={{ fontSize: '1.75em' }} />
+            </NavIcon>
+            <NavText>
+                Benefícios
+            </NavText>
+        </NavItem>
+        <NavItem eventKey="histórico">
+            <NavIcon>
+                <i className="fa fa-fw fa-home" style={{ fontSize: '1.75em' }} />
+            </NavIcon>
+            <NavText>
+                Histórico
             </NavText>
         </NavItem>
         <NavItem eventKey="charts">
